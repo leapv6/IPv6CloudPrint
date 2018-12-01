@@ -1,0 +1,140 @@
+
+
+
+#back{
+	background: url(images/admin_bg.png) no-repeat center top; 
+	height: 100%; 
+	width: 100%;  
+	min-width: 1000px;	
+	min-height: 600px;
+	/*overflow: hidden;*/
+}
+
+#middle{
+	height: 900px;
+	width: 717px;
+	margin:0 auto;
+}
+
+#head{
+	height: 148px;
+
+}
+
+#title{
+	height: 33px;
+	background: url(images/companyTitle.png) no-repeat;
+	margin: 0 157px 37px 164px;
+}
+
+#login_bg{
+	height: 486px;
+	width: 717px;
+	margin-top: 0px;
+	border: 2px solid #26afec;
+	border-radius: 10px;
+	
+}
+
+#header{
+	height: 45px;
+}
+
+#left{
+	display:inline;
+	float: left;
+	height: 18px;
+	width: 18px;
+	background: url(images/ball.png) no-repeat;
+	margin-left: 26px;
+	margin-top: 17px;
+}
+
+#right{
+	float: left;
+	height: 18px;
+	width: 18px;
+	background: url(images/ball.png) no-repeat;
+	margin-left: 635px;
+	margin-top: 17px;
+}
+
+#content{
+	height: 395px;
+	width: 312px;
+	background-color: white;
+	border: 0px solid #26afec;
+	border-radius: 10px;
+	margin:0 auto;
+	padding:0 147px 0 146px;
+}
+
+#login_head{
+	margin-right: 0;
+	width: 312px;
+	height: 148px;
+}
+
+#head_title{
+	padding-top: 25px;
+	width: 131px;
+	height: 148px;
+	margin-left: 115px;
+	margin-bottom: 26px;
+}
+
+#head_pic{
+	height: 118px;
+	background: url(images/admin_pic.png) no-repeat;
+	margin-bottom: 0;
+}
+
+#loginButton{
+	background: url(images/buttonBg.png) no-repeat;
+	width: 312px;
+	height: 58px;
+	margin-top: 16px;
+	font-size: 24px;
+	font-family: 黑体;
+	color: #ececec;
+	cursor:pointer;
+	border: 0;
+}
+
+.text1{
+	margin-top: 0px;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	color: #393939;
+	
+}
+
+.text{
+	width: 312px;
+	height: 204px;
+	text-align: center;
+}
+
+.put{
+	padding-left: 15px;
+	height: 34px;
+	width: 220px;
+	background-color: white;
+	border: 1px solid #69ade3;
+	border-radius: 0px;
+	margin-right: 5px;
+	font-size: 15px;
+}
+.shuru{
+	vertical-align:middle;
+	margin-bottom: 14px;
+	float: left;
+}
+.tip{
+	display:inline-block;
+	width: 65px;
+	text-align:right;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	color: #393939;
+}

@@ -1,0 +1,129 @@
+#head{
+	height: 80px;
+}
+
+#head_content{
+	width: 1024px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.text{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	color: black;
+	float: right;
+	margin-top: 40px; 
+}
+
+img{
+	margin-top: 17px;
+}
+
+#mid{
+
+}
+
+#shadow{
+	height: 14px;
+	background:url(images/shadow.png) repeat-x;
+}
+
+#mid_content{
+	height: 830px;
+	width: 1024px;
+	margin:0 auto;
+}
+
+#menu{
+	width: 228px;
+	height: 360px;
+	border: 1px solid #dfdfdf;
+	float: left;
+}
+
+#box{
+	width: 228px;
+	height: 278px;
+	margin-top: 30px;
+}
+
+
+.list{
+	
+
+}
+
+.list li{
+	margin:0 auto;
+	height: 50px;
+}
+.list li a{
+	padding-left: 40px;
+	text-align: left;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	overflow: hidden;
+}
+
+
+
+.list li a:hover{ 
+	background:#54c1f3; 
+	height: 50px;
+	color:white;
+
+}
+
+.fresher{
+	background:#54c1f3; 
+	height: 50px;
+	color:white;
+
+}
+
+.shop{
+	background:#54c1f3; 
+	height: 50px;
+	color:white;
+}
+
+#text{
+	width: 753px;
+	height: 820px;
+	border: 1px solid #dfdfdf;
+	float: right;
+}
+
+#text_box{
+	width: 704px;
+	height: 720px;
+	margin:auto auto;
+}
+
+h1{
+	font-family: 微软雅黑;
+	font-size: 30px;
+	color: #6fc9f5;
+	font-weight: 400;
+	margin-top: 32px;
+	margin-bottom: 5px;
+}
+
+h3{
+	font-family: 微软雅黑;
+	font-size: 18px;
+	margin-bottom: -7px;
+	margin-top: 28px;
+}
+
+p{
+	margin-top: 0px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}

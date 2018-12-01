@@ -1,0 +1,93 @@
+#box{
+	width: 100%;
+	height: 720px;
+}
+
+#left{
+	float: left;
+	width: 503px;
+	height: 720px;
+	z-index: 2;
+}
+
+#left_top{
+	width: 503px;
+	height: 78px;
+	background: url(images/shop_reg_top.png) no-repeat;
+}
+
+#left_mid{
+	width: 492px;
+	height: 642px;
+}
+
+#left_content{
+	width: 388px;
+	height: 642px;
+	margin:0 auto;
+}
+
+#left_content #title{
+	width: 388px;
+	height: 52px;
+}
+
+#left_content #form_box{
+	width: 388px;
+}
+
+#bottom{
+	padding-top: 27px;
+	height: 160px;
+	width: 388px;
+	float: left;
+}
+
+#left_content #form_box .one{
+	width: 388px;
+	height: 32px;
+}
+
+.form .star{
+	width: 22px;
+	height: 32px;
+}
+
+#checkbox{
+	float: left;
+}
+
+.reg_button{
+	display:block;
+	cursor: pointer;
+}
+
+#right{
+	width: 1050px;
+	float: left;
+	height: 720px;
+	z-index: 1;
+}
+
+#right #top{
+	height: 20px;
+	width: 100%;
+}
+
+#right #allmap{
+	height: 640px;
+	width: 1050px;
+	overflow: hidden;
+	margin:0;
+	font-family:"微软雅黑";
+}
+
+#right #foot{
+	margin-top: 5px;
+	height: 20px;
+	width: 100%;
+}
+
+a:hover{text-decoration:underline;}
+
+

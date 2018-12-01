@@ -1,0 +1,7 @@
+#layer #navigation {
+	background-image: url(images/bgWhite.png);
+	background-repeat: repeat-x;
+	height: 180px;
+	width: 100%;
+	clip: rect(auto,auto,auto,auto);
+}

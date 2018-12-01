@@ -1,0 +1,8 @@
+uploads/
+session/
+application/config/config.php
+images/helloweixin.png
+images/qrcode.png
+.svn/
+.git/
+.idea/

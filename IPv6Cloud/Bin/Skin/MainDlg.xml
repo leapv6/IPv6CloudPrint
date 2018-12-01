@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="890,590" sizebox="4,4,4,4" mininfo="890,590" roundcorner="5,5">
+    <Font name="微软雅黑" size="13" bold="false" italic="false" id="1"/>
+    <Font name="微软雅黑" size="15" bold="false" italic="false" id="2"/>
+    <Font name="文泉驿微米黑" size="13" bold="false" italic="false" id="3"/>
+    <HorizontalLayout enabled="true">
+        <VerticalLayout enabled="true" width="168" bkcolor="#ff025ac3">
+            <HorizontalLayout enabled="true"  bkimage="MainDlg/left_ad.png"/><!-- bkimage="MainDlg/left_ad.png" -->
+        </VerticalLayout>
+        <VerticalLayout enabled="true">
+            <HorizontalLayout enabled="true" height="88" bkimage="MainDlg/btn_bg.png"><!-- bkimage="MainDlg/btn_bg.png" -->
+                <VerticalLayout enabled="true" width="460">
+                    <Option name="optMain" float="true" pos="0,0,0,0" enabled="true" width="113" height="88" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/home_n.png" hotimage="MainDlg/home_h.png" group="grpMain" selected="true" selectedimage="MainDlg/home_h.png" />
+                    <Option name="optSysSet" float="true" pos="113,0,0,0" enabled="true" width="113" height="88" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/set_n.png" hotimage="MainDlg/set_h.png" group="grpMain" selectedimage="MainDlg/set_h.png" />
+                    <Option name="optHistory" float="true" pos="226,0,0,0" enabled="true" width="113" height="88" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/history_n.png" hotimage="MainDlg/history_h.png" group="grpMain" selectedimage="MainDlg/history_h.png" />
+                    <Option name="optAccount" float="true" pos="339,0,0,0" enabled="true" width="113" height="88" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/account_n.png" hotimage="MainDlg/account_h.png" group="grpMain" selectedimage="MainDlg/account_h.png" />
+                </VerticalLayout>
+                <VerticalLayout enabled="true">
+					<HorizontalLayout enabled="true" height="55">
+						<VerticalLayout enabled="true"/>
+						<VerticalLayout enabled="true" width="150">
+							<Button name="ButtonMin" float="true" pos="28,15,0,0" enabled="true" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/min_n.png" hotimage="MainDlg/min_h.png" />
+							<Button name="ButtonMax" float="true" pos="63,15,0,0" enabled="true" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/max_n.png" hotimage="MainDlg/max_h.png" />
+							<Button name="ButtonResize" visible="false" float="true" pos="63,15,0,0" enabled="true" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/resize_n.png" hotimage="MainDlg/resize_h.png" />
+							<Button name="ButtonClose" float="true" pos="97,15,0,0" enabled="true" width="36" height="36" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/close_n.png" hotimage="MainDlg/close_h.png" />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout enabled="true">
+						<VerticalLayout enabled="true" width="30"/>
+						<VerticalLayout enabled="true">
+							<Edit name="editSearch" text="请输入电话号码" bordersize="1" enabled="true" height="22" padding="0,5,0,0" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF111111" disabledtextcolor="#FFA7A6AA" />
+						</VerticalLayout>
+						<VerticalLayout enabled="true" width="22">
+							<Label name="labSearch" float="true" enabled="true" width="22" height="22"  pos="0, 5, 22, 27" bkimage="MainDlg/search_icon.jpg"/>
+						</VerticalLayout>
+						<VerticalLayout enabled="true" width="75">
+							<Button name="ButtonSearch" float="true" enabled="true" width="53" height="22" pos="5, 5, 58, 27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/search_n.png" hotimage="MainDlg/search_h.png" />
+						</VerticalLayout>
+					</HorizontalLayout>
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout enabled="true" bkcolor="#FFFFFFFF">
+                <TabLayout name="tabMain" enabled="true">
+					<!--业务受理-->
+					<VerticalLayout enabled="true">
+                        <HorizontalLayout enabled="true" height="30" bkcolor="#FFFFFFFF">
+							<VerticalLayout enabled="true">
+								<Label font="1" text="当前订单总数：" float="true" pos="10,8,0,0" enabled="true" width="100" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<Button  name="btnMainCount" font="1" text="0" float="true" pos="100,8,0,0" enabled="true" width="30" height="30" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" />
+								<Label font="1" text="特殊订单：" float="true" pos="130,8,0,0" enabled="true" width="70" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<Button  name="btnMainSpe" font="1" text="0" float="true" pos="190,8,0,0" enabled="true" width="30" height="30" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" />
+								<Label font="1" text="未配送订单：" visible="false" float="true" pos="220,8,0,0" enabled="true" width="84" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<Label  name="labMainUn" visible="false" font="1" text="0" float="true" pos="294,8,0,0" enabled="true" width="30" height="30" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="190">
+								<Button name="ButtonPrintOff" float="true" pos="0,8,0,0" enabled="true" width="180" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/print_off.png" />
+								<Button name="ButtonPrintOn" float="true" pos="0,8,0,0" enabled="true" width="180" height="25" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/print_on.png" visible="false"/>
+							</VerticalLayout>
+                        </HorizontalLayout>
+						<HorizontalLayout enabled="true" height="10" />
+						<HorizontalLayout enabled="true" height="1" >
+							<VerticalLayout enabled="true" width="10"/>
+							<VerticalLayout enabled="true" bkcolor="#FFcccccc" />
+							<VerticalLayout enabled="true" width="10"/>
+						</HorizontalLayout>
+                        <HorizontalLayout enabled="true" height="30" bkcolor="#FFFFFFFF">
+							<VerticalLayout enabled="true" />
+							<VerticalLayout enabled="true" width="280">
+								<Label font="1" text="服务器的连接状态：" float="true" pos="10,0,0,0" enabled="true" width="120" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<Label name="labMainConnectStatus" float="true"  pos="125,7,0,0" width="18" height="18" bkimage="MainDlg/connected.png"/>
+								<Label font="1" text="订单标记状态为" float="true" pos="150,0,0,10" enabled="true" width="112" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+								<Button name="ButtonMainSetStatus" float="true" pos="245,9,0,10" width="12" height="12" normalimage="MainDlg/down_btn.png" />
+							</VerticalLayout>
+                        </HorizontalLayout>
+                        <HorizontalLayout enabled="true" bkcolor="#FFFFFFFF">
+                            <List name="listMain" enabled="true" padding="10,5,0,0" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemlinecolor="#00808080" itemshowhtml="true" vscrollbar="false" hscrollbar="false" menu="true">
+								<ListHeader name="domain" enabled="true">
+									<ListHeaderItem text="序号" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="编号" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="35" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="文档名" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="120" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="用户名" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="110" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headMainNormal" text="类型▼" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headMainDouble" text="单双▼" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headMainBlack" text="颜色▼" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="份数" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="价格" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="订单状态" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="60" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="支付状态" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="60" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="备注" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="65" textcolor="#FF000000" sepwidth="1" align="center" />
+								</ListHeader>
+							</List>
+                        </HorizontalLayout>
+                        <HorizontalLayout enabled="true" height="30" bkcolor="#FFFFFFFF">
+							<VerticalLayout enabled="true" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonMainSelAll" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/selall.png"/>
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonMainFresh" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/refresh.png"/>
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonMainPrePage" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/pre_page_n.png" hotimage="MainDlg/pre_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonMainNextPage" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/next_page_n.png" hotimage="MainDlg/next_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="60">
+								<Label  name="labMainCurPage" text="1" float="true" pos="0,6,0,0" enabled="true" width="20" height="22" textcolor="#002CBAED" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+								<Label text="/" float="true" pos="20,6,0,0" enabled="true" width="10" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+								<Label  name="labMainTotalPage" text="100" float="true" pos="30,6,0,0" enabled="true" width="30" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="50">
+								<Label text="跳转到：" float="true" pos="0,6,0,0" enabled="true" width="50" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="40" height="400">
+								<Edit name="editMainGotoPage" text="1" bordersize="1" enabled="true" width="36" height="22" padding="2,6,2,0" bkcolor="#FFFFFFFF" bordercolor="#006DCFF3" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="5" />
+							<VerticalLayout enabled="true" width="28" height="400">
+								<Button name="ButtonMainGotoPage" float="true" pos="0,6,0,0" enabled="true" width="28" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/goto_page_n.png" hotimage="MainDlg/goto_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+						</HorizontalLayout>
+                        <HorizontalLayout enabled="true" height="40">
+							<Button name="btnUserInfo" float="true" text="" pos="100,0,0,0" enabled="true" width="362" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+                            <Button name="btnMainInfo" float="true" text="" align="left" pos="442,0,0,0"  enabled="true" width="196" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <!--软件配置-->
+					<VerticalLayout enabled="true">
+                        <HorizontalLayout enabled="true" height="150">
+                            <VerticalLayout enabled="true" width="70" />
+                            <VerticalLayout enabled="true" width="145">
+                                <Text text="本地IPv6地址：" font="1" float="true" pos="3,23,0,0" enabled="true" width="131" height="27" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                                <Text text="服务器地址：" font="1" float="true" pos="3,65,0,0" enabled="true" width="131" height="27" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                                <Text text="接收文件保存目录：" font="1" float="true" pos="3,108,0,0" enabled="true" width="131" height="27" textpadding="2,0,2,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true">
+                                <HorizontalLayout enabled="true" height="50">
+                                    <Edit name="editLocalIpv6" bordersize="1" enabled="true" height="27" padding="0,20,0,0" bkcolor="#FFFFFFFF" bordercolor="#00808080" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                                </HorizontalLayout>
+                                <HorizontalLayout enabled="true" height="50">
+                                    <Edit name="editServerIpv6" bordersize="1" enabled="true" height="27" padding="0,12,0,0" bkcolor="#FFFFFFFF" bordercolor="#00808080" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                                </HorizontalLayout>
+                                <HorizontalLayout enabled="true" height="50">
+                                    <Edit name="editSaveFilePath" bordersize="1" enabled="false" height="27" padding="0,5,0,0" bkcolor="#FFFFFFFF" bordercolor="#00808080" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                                </HorizontalLayout>
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true" width="180" height="150">
+                                <Button name="btnPathBrowser" float="true" pos="7,107,0,0" enabled="true" width="53" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/liulan_n.png" hotimage="MainDlg/liulan_h.png" />
+                                <Button name="btnOpenPath" float="true" pos="70,107,0,0" enabled="true" width="80" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/open_path_n.png" hotimage="MainDlg/open_path_h.png" />
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true" width="10" />
+                        </HorizontalLayout>
+                        <HorizontalLayout enabled="true">
+							<VerticalLayout enabled="true" width="20"/>
+                            <VerticalLayout enabled="true">
+                                <HorizontalLayout enabled="true" height="40">
+                                    <VerticalLayout enabled="true" />
+                                    <VerticalLayout enabled="true" width="100">
+                                        <Text text="普通打印机" font="2" padding="0,10,0,0" enabled="true" textpadding="2,0,2,0" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" align="wrap" />
+                                    </VerticalLayout>
+                                    <VerticalLayout enabled="true" />
+                                </HorizontalLayout>
+                                <HorizontalLayout enabled="true">
+                                    <List name="listBlackPrint" enabled="true" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" bordersize="1" bordercolor="#00808080"  padding="10,0,0,0" itemlinecolor="#FFEBEDEF"  menu="true">
+                                        <ListHeader enabled="false" />
+                                    </List>
+                                </HorizontalLayout>
+                            </VerticalLayout>
+							<VerticalLayout enabled="true" width="40">
+                                <HorizontalLayout enabled="true"/>
+                                <HorizontalLayout enabled="true" height="30">
+									<Button name="btnBlackLeft" float="false" enabled="true" width="28" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/left.png" hotimage="MainDlg/left.png" />
+								</HorizontalLayout>
+                                <HorizontalLayout enabled="true" height="30">
+									<Button name="btnBlackRight" float="false" enabled="true" width="28" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/right.png" hotimage="MainDlg/right.png" />
+								</HorizontalLayout>
+                                <HorizontalLayout enabled="true"/>
+							</VerticalLayout>
+                            <VerticalLayout enabled="true">
+								<HorizontalLayout enabled="true" height="40">
+                                    <VerticalLayout enabled="true" />
+                                    <VerticalLayout enabled="true" width="100">
+                                        <Text text="打印机" padding="0,10,0,0" enabled="true" textpadding="2,0,2,0" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+                                    </VerticalLayout>
+                                    <VerticalLayout enabled="true" />
+                                </HorizontalLayout>
+                                <HorizontalLayout enabled="true">
+                                    <List name="listPrint" enabled="true" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" bordersize="1" bordercolor="#00808080"  padding="5,0,5,0" itemlinecolor="#FFEBEDEF" menu="true">
+                                        <ListHeader enabled="false" />
+                                    </List>
+                                </HorizontalLayout>
+                            </VerticalLayout>
+							<VerticalLayout enabled="true" width="40">
+                                <HorizontalLayout enabled="true"/>
+                                <HorizontalLayout enabled="true" height="30">
+									<Button name="btnColorLeft" float="false" enabled="true" width="28" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/right.png" hotimage="MainDlg/right.png" />
+								</HorizontalLayout>
+                                <HorizontalLayout enabled="true" height="30">
+									<Button name="btnColorRight" float="false" enabled="true" width="28" height="24" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/left.png" hotimage="MainDlg/left.png" />
+								</HorizontalLayout>
+                                <HorizontalLayout enabled="true"/>
+							</VerticalLayout>
+                            <VerticalLayout enabled="true">
+								<HorizontalLayout enabled="true" height="40">
+                                    <VerticalLayout enabled="true" />
+                                    <VerticalLayout enabled="true" width="100">
+                                        <Text text="彩色打印机" padding="0,10,0,0" enabled="true" textpadding="2,0,2,0" textcolor="#FF08AEEA" disabledtextcolor="#FFA7A6AA" font="2" align="centerwrap" />
+                                    </VerticalLayout>
+                                    <VerticalLayout enabled="true" />
+                                </HorizontalLayout>
+                                <HorizontalLayout enabled="true">
+                                    <List name="listColorPrint" enabled="true" bkcolor="#FFFFFFFF" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" bordersize="1" bordercolor="#00808080"  padding="0,0,20,0" itemlinecolor="#FFEBEDEF" menu="true">
+                                        <ListHeader enabled="false" />
+                                    </List>
+                                </HorizontalLayout>
+                            </VerticalLayout>
+							<VerticalLayout enabled="true" width="10"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout enabled="true" height="80">
+                            <VerticalLayout enabled="true" />
+                            <VerticalLayout enabled="true" width="200">
+                                <Button name="btnSetOK" float="true" pos="4,28,0,0" enabled="true" width="83" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/ok_n.png" hotimage="MainDlg/ok_h.png"/>
+                                <Button name="btnSetCancle" float="true" pos="110,28,0,0" enabled="true" width="83" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/cancle_n.png" hotimage="MainDlg/cancle_h.png"/>
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <!--历史订单-->
+					<VerticalLayout enabled="true">
+						<HorizontalLayout enabled="true" bkcolor="#FFFFFFFF">
+                            <List name="listHistory" enabled="true" padding="10,10,0,0" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" itemlinecolor="#00808080" itemshowhtml="true" vscrollbar="false" hscrollbar="false" menu="true">
+								<ListHeader name="domain" enabled="true" font="1">
+									<ListHeaderItem text="序号" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="40" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="编号" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="35" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="文档名" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="120" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="用户名" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="110" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headHisNormal" font="3" text="类型▼" enabled="true" bkcolor="#FFCEEFFB" maxwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headHisDouble" font="3" text="单双▼" enabled="true" bkcolor="#FFCEEFFB" maxwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem name="headHisBlack" font="3" text="颜色▼" enabled="true" bkcolor="#FFCEEFFB" maxwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="份数" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="价格" font="3" enabled="true" bkcolor="#FFCEEFFB" maxwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="支付状态" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="50" textcolor="#FF000000" sepwidth="1" align="center" />
+									<ListHeaderItem text="备注" font="3" enabled="true" bkcolor="#FFCEEFFB" minwidth="65" textcolor="#FF000000" sepwidth="1" align="center" />
+								</ListHeader>
+							</List>
+                        </HorizontalLayout>
+						<HorizontalLayout enabled="true" height="35" bkcolor="#FFFFFFFF">
+							<VerticalLayout enabled="true" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonHisSelAll" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/selall.png"/>
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonHisFresh" float="true" pos="0,6,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/refresh.png"/>
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonHisPrePage" float="true" pos="0,4,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/pre_page_n.png" hotimage="MainDlg/pre_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="57">
+								<Button name="ButtonHisNextPage" float="true" pos="0,4,0,0" enabled="true" width="57" height="21" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/next_page_n.png" hotimage="MainDlg/next_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+							<VerticalLayout enabled="true" width="60">
+								<Label  name="labHisCurPage" text="1" float="true" pos="0,4,0,0" enabled="true" width="20" height="22" textcolor="#002CBAED" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+								<Label text="/" float="true" pos="20,4,0,0" enabled="true" width="10" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+								<Label  name="labHisTotalPage" text="100" float="true" pos="30,4,0,0" enabled="true" width="30" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="1" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="50">
+								<Label text="跳转到：" float="true" pos="0,4,0,0" enabled="true" width="50" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="0" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="40" height="400">
+								<Edit name="editHisGotoPage" text="1" bordersize="1" enabled="true" width="36" height="22" padding="2,4,2,0" bkcolor="#FFFFFFFF" bordercolor="#006DCFF3" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="5" />
+							<VerticalLayout enabled="true" width="28" height="400">
+								<Button name="ButtonHisGotoPage" float="true" pos="0,4,0,0" enabled="true" width="28" height="22" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/goto_page_n.png" hotimage="MainDlg/goto_page_h.png" />
+							</VerticalLayout>
+							<VerticalLayout enabled="true" width="10" />
+						</HorizontalLayout>
+                        <HorizontalLayout enabled="true" height="45" bkcolor="#FFFFFFFF">
+							<VerticalLayout enabled="true" />
+                            <VerticalLayout enabled="true" width="210">
+                                <Button name="ButtonPrint" float="true" pos="0,5,0,0" enabled="true" width="83" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/dayin_n.png" hotimage="MainDlg/dayin_h.png" />
+                                <Button name="ButtonExport" float="true" pos="93,5,0,0" enabled="true" width="102" height="27" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="MainDlg/daochu_n.png" hotimage="MainDlg/daochu_h.png" />
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+					<!--结算中心-->
+                    <VerticalLayout enabled="true">
+                        <HorizontalLayout enabled="true" />
+                        <HorizontalLayout enabled="true" height="453">
+                            <VerticalLayout enabled="true" />
+                            <VerticalLayout enabled="true" width="621" bkimage="MainDlg/account_bg.png">
+                                <Button name="labAccount1" visible="false" text="0" float="true" align="center" pos="294,204,0,0" enabled="true" width="29" height="22" textcolor="#00F34707"font="2" />
+                                <Button name="labAccount2" text="0" float="true" align="center" pos="307,250,0,0" enabled="true" width="28" height="22" textcolor="#00F34707" font="2" />
+                                <Button name="labAccount3" text="0" float="true" align="center" pos="306,273,0,0" enabled="true" width="34" height="22" textcolor="#00F34707" font="2" />
+                                <Button name="labAccount4" text="0" float="true" align="center" pos="445,204,0,0" enabled="true" width="34" height="22" textcolor="#00F34707" font="2" />
+                                <Button name="labAccount5" text="0" float="true" align="center" pos="445,227,0,0" enabled="true" width="34" height="22" textcolor="#00F34707" font="2" />
+                                <Button name="labAccount6" text="0" float="true" align="center" pos="445,250,0,0" enabled="true" width="34" height="22" textcolor="#00F34707" font="2" />
+                                <Button name="labAccount7" text="0" float="true" align="center" pos="445,273,0,0" enabled="true" width="34" height="22" textcolor="#00F34707" font="2" />
+								<Button name="btnAccountAddr" text="http://www.v6cp.com"  float="true" pos="103,400,0,0" enabled="true" width="221" height="24" textpadding="2,0,2,0" align="left" textcolor="#ff0000ff" font="2" />
+                            </VerticalLayout>
+                            <VerticalLayout enabled="true" />
+                        </HorizontalLayout>
+                        <HorizontalLayout enabled="true" />
+                    </VerticalLayout>
+                </TabLayout>
+            </HorizontalLayout>
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

@@ -1,0 +1,80 @@
+.form_content{
+	height: 30px;
+    margin-top: 18px;
+    padding-top: 0px;
+}
+
+ label{
+    float: left;
+    margin-top: 5px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+#form_box{
+    width: 330px;
+    margin-top: 20px;
+}
+
+.form_textarea{
+	height: 105px;
+}
+
+.form_textarea label{
+	float: left;
+    margin-top: 30px;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+.form_radio{
+	height: 30px;
+}
+
+input { 
+	float: right;
+	height: 30px;
+    font: normal 14px/100% Verdana, Tahoma, sans-serif; 
+    width: 100px; 
+    background-color: #e5e5e5; 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    } 
+
+textarea{
+	margin-top: 0px;
+	width: 210px ! important;
+	font: normal 14px/100% Verdana, Tahoma, sans-serif; 
+	height: 105px;
+	float: right;
+	background-color: #e5e5e5; 
+	resize: none;
+}
+
+ul {
+	display: inline;
+	float: right;
+	padding:0px;
+	margin:0px;
+	margin-right: 65px;
+}
+
+ul li{
+	margin-top: 0px;
+}
+
+.submit input { 
+    width: 206px; 
+    height: 40px;
+    padding: 9px 20px; 
+    background: #0078ff; 
+    border: 0; 
+    font-size: 16px; 
+    color: white; 
+    font-weight: bold;
+    -moz-border-radius: 2px; 
+    -webkit-border-radius: 2px; 
+    cursor: pointer;
+    }
+

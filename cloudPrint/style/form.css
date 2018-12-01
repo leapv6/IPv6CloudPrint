@@ -1,0 +1,22 @@
+.form{
+	margin-top: 14px;
+	width: 388px;
+	height: 32px;
+}
+
+.form span{
+	float: left;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	height:32px;    /* 文字居中对齐*/
+  	line-height:32px;   
+  	overflow:hidden;
+}
+
+.form input{
+	width: 270px;
+	height: 32px;
+	float: right;
+	border: 1px solid #cacaca;
+}
+

@@ -1,0 +1,13 @@
+input{
+	border: none;
+}
+
+.roundedRectangle{  
+    height: 46px;   
+    width: 312px;  
+    margin-top: 10px;  
+    border-width: 0px; //边缘的宽度，如果要分别设置可以这样：border-width: 15px 5px 15px 5px;依次为上、右、下、左  
+    border-style: solid;  
+    border-radius: 5px;    //圆角的大小  
+    border-color: #000 #000 #000 #000;  //边框颜色，依次为上、右、下、左  
+}  

@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* 
+** description: 名企招聘站点
+** Author: zhaoran
+** Date: 2014-01-18
+*/
+/*topbar*/
+@import url("../../../../static.58.com/ui6/topbar.css"/*tpa=http://static.58.com/ui6/topbar.css*/);
+
+/*==================== reset ====================*/
+/* reset 初始化 Based on work by Eric Meyer */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	font:14px/1.5 Arial,simsun,sans-serif,"宋体";
+	color:#282828;
+}
+ol, ul {/* 重置列表 */
+	list-style: none;
+}
+table {/* 重置表格 tables still need 'cellspacing="0"' in the markup */
+	border-collapse:collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+fieldset, img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1,h2,h3,h4,h5,h6{/*font-size:100%;*/font-weight:700}
+strong{font-weight:700}
+button,input,select,textarea{font-size:100%}
+address,cite,dfn,em,var{font-style:normal}
+i{font-style:italic}
+img{vertical-align:middle}
+/* 重置链接 */
+a{text-decoration:none;cursor:pointer}
+a:hover{color:#f00}
+a:focus{outline:none}
+/*通用样式*/
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{zoom:1}
+/*==================== module ====================*/
+/* 整体框架布局 */
+.wb-header,.wb-main{width:1000px}
+.wb-header{width:1002px;height:122px;margin:15px auto 2px;position: relative}
+.wb-main{margin-bottom:40px;margin:0 auto 40px}
+/* 区域结构布局 */
+/*topbar*/
+#topbar{width:100%; height:30px; line-height:30px; background:#f5f5f5; background-image:none!important; font: 12px/2 Arial,Tahoma,"宋体"; border-bottom:1px solid #d9dbde}
+#topbar .w, #topbar .warp{ width:1002px;line-height:30px}
+#topbar .haschild{height:30px;line-height:30px}
+.bar_left,.bar_right{ height:30px; word-spacing:normal}
+#topbar h2{color:#ee4433; font-weight:bold; font-size:14px}
+#ipconfig{ margin:0 22px 0 3px}
+#topbar a{color:#585858}
+.bar_left span{ color:#888888}
+.bar_left .gap,#topbar .mobile,#modify,#myfeet,#minsearch,#topPost{ display:none}
+#topbar .gap{ color:#d9d9d9}
+#topbar #sitemap{ padding-right:13px; cursor:pointer}
+#sitemapBox{ top:31px}
+#my58menu .arrow{ right:12px}
+#login,#my58menu{line-height: 30px; background: url("../../../../pic2.58.com/ui6/index/line.png"/*tpa=http://pic2.58.com/ui6/index/line.png*/) right 9px no-repeat}
+#login .gap{ margin-right:8px}
+.bar_right .arrow{ width:5px; height:3px; top:13px; background:url("../../../../pic2.58.com/ui7/job/hire/hirelist.png"/*tpa=http://pic2.58.com/ui7/job/hire/hirelist.png*/) -203px -5px no-repeat!important}
+#sitemap .arrow{right:2px}
+.crumbs{display: none}
+/*head*/
+.headtit .mq-logo{vertical-align:middle}
+.headtit .mq-logo img{width:130px;height:98px}
+.headtit h1{display:inline-block;*display:inline;zoom:1;margin-left:18px;font:normal 24px Microsoft Yahei;color:#1c1c1c}
+.nav{/*float:right;padding-top:85px*/ position:absolute;bottom:0;right: 0}
+.nav li{float:left;display:inline;margin-left:4px}
+.nav li a{display:block;width:98px;line-height:34px;border:1px solid #dcdee1;border-bottom:none;color:#282828;text-align:center}
+.nav li a:hover,.nav li a.cur{height:36px;margin-bottom:-2px;color:#fff;font-weight:bold;position:relative;z-index:2}
+/*banner*/
+.slide{position:relative;overflow:hidden;zoom:1;margin-bottom:15px}
+.slidecon{position:relative;width:1000px;height:300px;margin:0 auto;overflow:hidden;zoom:1}
+.slidecon li{position:absolute}
+.slidecon li img{width:1000px;height:300px}
+.slideidx{position:absolute;float:right;right:20px;bottom:19px;z-index:20}
+.slideidx li{float:left;display:inline;margin-left:8px;width:29px;height:5px;background:#d4d6e1;overflow:hidden;zoom:1}
+.slideidx li.cur{background:#373c64}
+/*公司简介*/
+.compIntro{margin-bottom:15px}
+.mtit{height:40px}
+.mtit h2{float:left;font:normal 20px/40px Microsoft Yahei;color:#101010}
+.mtit #bdshare{float:right!important;margin-top:7px}
+.mtit #bdshare .bds_more{padding-top:4px}
+.compIntro .mcon{padding:13px 10px 20px}
+.basicMsg{padding-bottom:19px}
+.basicMsg .compTit h3{color:#252525;float:left}
+.basicMsg .compTit i,.detailMsg .map i{display:inline-block;vertical-align:middle;margin-left:10px;background-image:url("../../../../pic2.58.com/ui7/job/hire/compdetail-icon.gif"/*tpa=http://pic2.58.com/ui7/job/hire/compdetail-icon.gif*/);background-repeat:no-repeat}
+.basicMsg .compTit .validIco{width:23px;height:16px;background-position:0 -17px}
+.basicMsg .compTit .mqIco{width:45px;height:15px;background-position:0 -139px}
+.basicMsg .compTit .yearIco{width:20px;height:14px;padding-left:15px;background-position:0 -156px;font:bold 12px SimSun;color:#fb5800}
+.basicMsg .compsum p{color:#585858;line-height:30px}
+.basicMsg .compsum .showIco{font-size:12px; display:block;text-align:right}
+
+.detailMsg table tr{height:36px; line-height:36px}
+.detailMsg table th{width:85px; color:#686868;text-align:right;font-weight:normal}
+.detailMsg table td{width:374px; color:#333;line-height: 22px;padding:5px 0}
+.detailMsg table .c33{color:#333}
+.detailMsg table a:hover{color: #ff0000}
+.detailMsg .map{font-size:12px}
+.detailMsg .map i{width:12px; height:17px; margin-right:5px; background-position:0 -84px;vertical-align:-3px}
+.detailMsg .cbright li{float:left; font-size:12px; height:14px; line-height:14px;color:#fff;padding:0 5px;margin-right:5px;background:#cc9e7b;border-bottom:1px solid #ad815f}
+
+.compSlide{height:136px; /*margin:30px 0 0 -5px;*/margin-top:30px; position:relative; overflow:hidden}
+.contList{position:absolute}
+.contList li{width:182px; height:136px; float:left; display:inline; background:#F8F8F8;; overflow:hidden;cursor:pointer;margin-left:5px;}
+.contList img{/*width:182px;height:136px; */margin:0 auto; display:block;}
+.compSlide a{position:absolute; right:0; top:0; width:55px; height:136px; background:#000}
+.compSlide a:hover{filter:alpha(opacity=60); opacity: 0.6}
+.compSlide i{position:absolute; right:23px; top:55px; width:11px; height:19px; background:url("../../../../pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif"/*tpa=http://pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif*/) no-repeat -23px -74px;}
+.compSlide .prev{left:0}
+.compSlide .prev i{left:23px;background-position:-20px -42px}
+
+.outermask{width:100%; height:100%;_height:expression(document.documentElement.clientHeight); background:#000; filter:alpha(opacity=85);opacity:0.85; position:fixed; top:0; right:0; _position: absolute;_top: expression(eval(document.documentElement.scrollTop)); z-index:999;display:none;}
+.scrollBox{width:100%; position:fixed; top:0; right:0; _position: absolute;_top: expression(eval(document.documentElement.scrollTop));z-index:1000; padding-top:10px;display:none;}
+.scrollBox .rollBoxwrap{position:relative; margin:0 auto; width:1040px; background:#000; padding-top:20px;}
+.scrollBox .scollCont{ margin:0 100px 15px 101px; height:478px;}
+.scrollBox .nextBtn,.scrollBox .prevBtn{ width:19px; height:32px; float:left; background:url("../../../../pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif"/*tpa=http://pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif*/) no-repeat 0 -37px;margin-top:224px;}
+.scrollBox .nextBtn{ background-position:0 -69px;}
+.scrollBox .photoDis{width:641px; height:480px; float:left; margin:0 80px; display:inline; overflow:hidden; position:relative;}
+.scrollBox .scollList1{ position:absolute;}
+.scrollBox .scollList1 li{ float:left; width:641px; height:480px;}
+.scrollBox .scollList1 li img{ display:block; margin:0 auto;} 
+.scrollBox .scollList1 dl{ width:624px; height:56px;padding:6px 0 0 16px; position:absolute; left:0; top:418px; background:#000;filter:alpha(opacity=80);opacity:0.8; color:#fff; font-size:13px;}
+.scrollBox .scollList1 dl dt{ font-size:14px; line-height:27px;}
+.scrollBox .photoPrev,.scrollBox .photoNext{width:50%; height:100%; top:0; left:0; position:absolute;cursor:url("../../../../pic2.58.com/ui7/job/hire/leftcur.cur"/*tpa=http://pic2.58.com/ui7/job/hire/leftcur.cur*/),auto; background:url("about.blank"/*tpa=http://oss.dayinyun.cn/Public/Home/Css/about.blank*/)}
+.scrollBox .photoNext{left:320px;cursor:url("../../../../pic2.58.com/ui7/job/hire/rightcur.cur"/*tpa=http://pic2.58.com/ui7/job/hire/rightcur.cur*/),auto;}
+.scrollBox .scrollList2{padding:0 0 16px 99px;} 
+.scrollBox .scrollList2 img{ margin:18px 6px 0 7px;}
+.scrollBox .scrollList2 .currentImg{ border:3px solid #ff8400; margin:16px 3px 0 4px;}
+.scrollBox .closeIco{ width:35px; height:35px; display:block; background:url("../../../../pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif"/*tpa=http://pic2.58.com/ui7/job/qy/mingqi/job-m-rollBox.gif*/) 0 0 no-repeat; position:absolute;top:0; right:0;}
+
+/*分公司招聘*/
+.mtit .seeAll{line-height:40px;font-size:12px;float:right;color:#101010}
+.mtit .seeAll:hover{color:#ff0000}
+.branchInfo{margin-bottom:20px}
+.branchInfo dl{ width: 470px; float: left; margin:11px 0; font-size: 12px} 
+.branchInfo dl a{color:#585858}
+.branchInfo dl a:hover{color:#ff0000}
+.branchInfo .fl{margin-right: 20px}
+.branchInfo .fl a{width: 140px; height: 105px;text-align:center; display:table-cell; vertical-align: middle; *display:block;
+*font-size:92px}
+.branchInfo .fl img{vertical-align: middle; max-width:140px; width:expression(this.width > 140 ? "140px" : this.width); max-height:105px; height:expression(this.height > 105 ? "105px" : this.height);}
+.branchInfo dl dt{font-size: 14px; margin-bottom: 4px}
+.branchInfo dl dd{line-height: 24px; color: #585858}
+
+/*招聘职位*/
+.posCata{float:right;font-size:0;margin-top:6px}
+.posCata a{ width:78px; height:26px; line-height:26px; font-size:12px; display:inline-block;text-align: center; font-size:12px;background:#f6f6f6; border:1px solid #e4e6e8; color:#282828}
+.posCata .selcur{border:none;color:#fff;font-weight:bold}
+.hireInfo .jobSearch{padding-top:15px;margin-bottom: 6px}
+.hireInfo .selItem{float:left;line-height:24px;font-size:12px;display:inline;margin-right:15px}
+.hireInfo .selItem span{float:left;color:#161616;margin-right:5px}
+.hireInfo .selectbox{width:123px; height:24px; float:left;position:relative;border:1px solid #dcdee1;border-top-color:#b5b7bc;background:#fff;font-size:12px;cursor:pointer}
+.hireInfo .selectbox .sv{padding-left:10px;color:#585858;background:url("../../../../pic2.58.com/ui7/job/hire/compdetail-icon.gif"/*tpa=http://pic2.58.com/ui7/job/hire/compdetail-icon.gif*/) right -106px no-repeat}
+/*.hireInfo .selectbox #jobcate{color:#aeaeae}*/
+.hireInfo .selectbox .selelist{display:none;position:absolute;width:100%;left:-1px;top:25px;max-height:272px;_height:expression((this.clientHeight)<272?"auto":"272");border:1px solid #ccc;background:#fff;overflow:auto;zoom:1;z-index:10}
+.hireInfo .selectbox .selelist li{height:24px;line-height:24px;padding:0 10px;color:#434343}
+.hireInfo .selectbox .selelist li.hover{background:#f5f5f5}
+.hireInfo .inputbox{width:240px;float:left;position:relative;background:#fff;font-size:12px;border-left:1px solid #dcdee1;cursor:pointer}
+.hireInfo .inputbox .keywords{width:233px; height:24px;padding-left:7px;line-height:24px;border:1px solid #dcdee1;border-top-color:#b5b7bc;border-left: none}
+.hireInfo .c3{color:#ccc}
+/*.hireInfo .jobsearch{height:308px;padding:20px;}*/
+.hireInfo .searchbtn{display:inline-block;width:69px;height:24px;line-height:24px;text-align:center;font-size:14px;font-weight:bold;color:#fff;border-bottom:1px solid #c46807;border-radius:2px}
+.hireInfo .searchbtn:hover{color:#fff}
+
+.hireList table{width:100%;clear:left}
+.hireList tr{height:44px;line-height:44px;font-size:12px;border-bottom:1px solid #edeef0}
+.hireList tr th{color:#787878;padding-left:9px}
+.hireList tr td{padding-left:9px;color:#373737}
+.hireList tr td a{font-size:14px}
+.hireList tr td .red{font:bold 14px/44px SimSun;color:#ff0f0f}
+.hireList .pos-name{width:202px}
+.hireList .pos-salary{width:177px}
+.hireList .pos-adrs{width:128px}
+.hireList .pos-edu{width:177px}
+.hireList .pos-exp{width:99px}
+.hireList .pos-num{width:105px}
+.hireList .pos-time{width:87px}
+/*招聘职位无结果*/
+.noResult{border-top: 1px solid #eeeef0; padding: 92px 0 126px 0; text-align: center; color: #7a7a7a}
+.resultTip{display:inline-block; *display:inline; zoom:1;height:48px;background:url("../../../../pic2.58.com/ui7/job/hire/job-fc-noresult.png"/*tpa=http://pic2.58.com/ui7/job/hire/job-fc-noresult.png*/) 0 0 no-repeat; padding:24px 0 0 56px}
+
+.page{text-align:center;padding:30px 0;font-size:0}
+.page a,.page strong{height:34px;line-height:34px;display:inline-block;padding:0 13px; margin-left:-1px;position:relative; z-index:1;color:#585858; border:1px solid #e6e7e8; font:bold 14px/34px "Arial"; vertical-align:middle}
+/*.page a:hover,.page a:visited{color:#f88d14}*/
+.page strong{color:#fff; z-index:2; font-size:16px}
+.page .next,.page .prv{padding:0 24px 0 19px; background:url("../../../../pic2.58.com/ui7/job/resume/nextIcon.png"/*tpa=http://pic2.58.com/ui7/job/resume/nextIcon.png*/) no-repeat 59px center;font-weight:normal; font-size:12px}
+.page .prv{padding:0 19px 0 24px;background:url("../../../../pic2.58.com/ui7/job/resume/prevIcon.png"/*tpa=http://pic2.58.com/ui7/job/resume/prevIcon.png*/) no-repeat 15px center}
+.coupad_l{display:none}
+
+li a.cur {
+background: #8f0100;
+border-color: #750505;
+}
+.wb-header {
+border-bottom: 2px solid #750505;
+}

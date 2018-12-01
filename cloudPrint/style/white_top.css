@@ -1,0 +1,21 @@
+#head{
+	height: 80px;
+}
+
+#head_content{
+	width: 1024px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.text{
+	font-size: 14px;
+	font-family: 微软雅黑;
+	color: black;
+	float: right;
+	margin-top: 40px; 
+}
+
+img{
+	margin-top: 17px;
+}

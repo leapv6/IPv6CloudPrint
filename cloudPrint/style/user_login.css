@@ -1,0 +1,69 @@
+#content{
+	width: 312px;
+	height: 443px;
+	margin:68px auto 67px auto;
+
+}
+
+#top{
+	height: 173px;
+	
+}
+
+#top_content{
+	width: 164px;
+	margin-left: 95px;
+	margin-right: 53px;
+	
+}
+
+#top_content .head{
+	height: 145px;
+	background: url(images/user_head.png) no-repeat; 
+	margin-left: 9px;
+	margin-bottom: 0px;
+
+}
+
+#top_content .text{
+	height: 19px;
+	font-size: 30px;
+	font-family: 黑体;
+	color: #333333;
+}
+
+#middle{
+	height: 233px;
+	margin-top: 32px;
+}
+
+#userPhone{
+	background: #d3d3d3 url(images/userIcon.png) no-repeat 15px 11px;
+	padding-left: 45px;
+	font-size: 20px;
+	width:258px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#userPsw{
+
+	background: #d3d3d3 url(images/lockIcon.png) no-repeat 15px 11px;
+	padding-left: 45px;
+	font-size: 20px;
+	width:258px;
+	margin-top: 24px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#loginButton{
+	background: url(images/buttonBg.png) no-repeat;
+	width: 312px;
+	height: 58px;
+	margin-top: 52px;
+	font-size: 24px;
+	font-family: 黑体;
+	color: #ececec;
+	cursor:pointer;
+}

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98DEAA3E-A94B-492A-A074-ABCC768E4745}</ProjectGuid>
+    <RootNamespace>IPv6Cloud</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>v6</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../Bin</OutDir>
+    <IntDir>../Build</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../Build</IntDir>
+    <OutDir>../Bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerOutput>All</AssemblerOutput>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="json\json_internalarray.inl" />
+    <None Include="json\json_internalmap.inl" />
+    <None Include="json\json_valueiterator.inl" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\About_16_16.bmp" />
+    <None Include="res\Clear_16_16.bmp" />
+    <None Include="res\Exit_16_16.bmp" />
+    <None Include="res\SysSet_16_16.bmp" />
+    <None Include="res\IPv6Cloud.bmp" />
+    <None Include="res\IPv6Cloud.ico" />
+    <None Include="res\IPv6Cloud.rc2" />
+    <None Include="res\IPv6Cloud_16_16.bmp" />
+    <None Include="res\IPv6Cloud_48_48.bmp" />
+    <None Include="res\Web_16_16.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DuiLib\Control\UIActiveX.h" />
+    <ClInclude Include="..\DuiLib\Control\UIButton.h" />
+    <ClInclude Include="..\DuiLib\Control\UICheckBox.h" />
+    <ClInclude Include="..\DuiLib\Control\UICombo.h" />
+    <ClInclude Include="..\DuiLib\Control\UIDateTime.h" />
+    <ClInclude Include="..\DuiLib\Control\UIEdit.h" />
+    <ClInclude Include="..\DuiLib\Control\UILabel.h" />
+    <ClInclude Include="..\DuiLib\Control\UIList.h" />
+    <ClInclude Include="..\DuiLib\Control\UIOption.h" />
+    <ClInclude Include="..\DuiLib\Control\UIProgress.h" />
+    <ClInclude Include="..\DuiLib\Control\UIRichEdit.h" />
+    <ClInclude Include="..\DuiLib\Control\UIScrollBar.h" />
+    <ClInclude Include="..\DuiLib\Control\UISlider.h" />
+    <ClInclude Include="..\DuiLib\Control\UIText.h" />
+    <ClInclude Include="..\DuiLib\Control\UITreeView.h" />
+    <ClInclude Include="..\DuiLib\Control\UIWebBrowser.h" />
+    <ClInclude Include="..\DuiLib\Core\UIBase.h" />
+    <ClInclude Include="..\DuiLib\Core\UIContainer.h" />
+    <ClInclude Include="..\DuiLib\Core\UIControl.h" />
+    <ClInclude Include="..\DuiLib\Core\UIDefine.h" />
+    <ClInclude Include="..\DuiLib\Core\UIDlgBuilder.h" />
+    <ClInclude Include="..\DuiLib\Core\UIManager.h" />
+    <ClInclude Include="..\DuiLib\Core\UIMarkup.h" />
+    <ClInclude Include="..\DuiLib\Core\UIRender.h" />
+    <ClInclude Include="..\DuiLib\Layout\UIChildLayout.h" />
+    <ClInclude Include="..\DuiLib\Layout\UIHorizontalLayout.h" />
+    <ClInclude Include="..\DuiLib\Layout\UITabLayout.h" />
+    <ClInclude Include="..\DuiLib\Layout\UITileLayout.h" />
+    <ClInclude Include="..\DuiLib\Layout\UIVerticalLayout.h" />
+    <ClInclude Include="..\DuiLib\UIlib.h" />
+    <ClInclude Include="..\DuiLib\Utils\downloadmgr.h" />
+    <ClInclude Include="..\DuiLib\Utils\FlashEventHandler.h" />
+    <ClInclude Include="..\DuiLib\Utils\stb_image.h" />
+    <ClInclude Include="..\DuiLib\Utils\UIDelegate.h" />
+    <ClInclude Include="..\DuiLib\Utils\Utils.h" />
+    <ClInclude Include="..\DuiLib\Utils\WebBrowserEventHandler.h" />
+    <ClInclude Include="..\DuiLib\Utils\WinImplBase.h" />
+    <ClInclude Include="Comm\AdoQuery.h" />
+    <ClInclude Include="Comm\BASE64_API.h" />
+    <ClInclude Include="Comm\Collector.h" />
+    <ClInclude Include="Comm\DataQueue.h" />
+    <ClInclude Include="Comm\DS_Ini.h" />
+    <ClInclude Include="Comm\DS_IniFile.h" />
+    <ClInclude Include="Comm\DS_Lock.h" />
+    <ClInclude Include="Comm\DS_Print.h" />
+    <ClInclude Include="Comm\DS_Utils.h" />
+    <ClInclude Include="Comm\EasySize.h" />
+    <ClInclude Include="Comm\excel9.h" />
+    <ClInclude Include="Comm\FastSemaphore.h" />
+    <ClInclude Include="Comm\FileUtils.h" />
+    <ClInclude Include="Comm\Global.h" />
+    <ClInclude Include="Comm\HttpDownload.h" />
+    <ClInclude Include="Comm\md5.h" />
+    <ClInclude Include="Comm\FileDownload.h" />
+    <ClInclude Include="Comm\MemFree.h" />
+    <ClInclude Include="Comm\msword.h" />
+    <ClInclude Include="Comm\MyExcel.h" />
+    <ClInclude Include="Comm\TcpClient.h" />
+    <ClInclude Include="Comm\TCPSocket.h" />
+    <ClInclude Include="Comm\HttpJsonReader.h" />
+    <ClInclude Include="DuiDlg\DuiLib_Dialog.h" />
+    <ClInclude Include="DuiDlg\DuiMainDlg.h" />
+    <ClInclude Include="DuiDlg\DuiLoginDlg.h" />
+    <ClInclude Include="DuiDlg\WndShadow.h" />
+    <ClInclude Include="json\autolink.h" />
+    <ClInclude Include="json\config.h" />
+    <ClInclude Include="json\features.h" />
+    <ClInclude Include="json\forwards.h" />
+    <ClInclude Include="json\json.h" />
+    <ClInclude Include="json\json_batchallocator.h" />
+    <ClInclude Include="json\reader.h" />
+    <ClInclude Include="json\value.h" />
+    <ClInclude Include="json\writer.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="PubHead.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="IPv6Cloud.h" />
+    <ClInclude Include="IPv6CloudDlg.h" />
+    <ClInclude Include="Xml\tinystr.h" />
+    <ClInclude Include="Xml\tinyxml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Comm\BASE64_API.cpp" />
+    <ClCompile Include="Comm\Collector.cpp" />
+    <ClCompile Include="Comm\DS_Ini.cpp" />
+    <ClCompile Include="Comm\DS_IniFile.cpp" />
+    <ClCompile Include="Comm\excel9.cpp" />
+    <ClCompile Include="Comm\FastSemaphore.cpp" />
+    <ClCompile Include="Comm\FileUtils.cpp" />
+    <ClCompile Include="Comm\Global.cpp" />
+    <ClCompile Include="Comm\HttpDownload.cpp" />
+    <ClCompile Include="Comm\md5.cpp" />
+    <ClCompile Include="Comm\FileDownload.cpp" />
+    <ClCompile Include="Comm\msword.cpp" />
+    <ClCompile Include="Comm\MyExcel.cpp" />
+    <ClCompile Include="Comm\TcpClient.cpp" />
+    <ClCompile Include="Comm\TCPSocket.cpp" />
+    <ClCompile Include="Comm\HttpJsonReader.cpp" />
+    <ClCompile Include="DuiDlg\DuiLib_Dialog.cpp" />
+    <ClCompile Include="DuiDlg\DuiLoginDlg.cpp" />
+    <ClCompile Include="DuiDlg\DuiMainDlg.cpp" />
+    <ClCompile Include="DuiDlg\DuiMainSub.cpp" />
+    <ClCompile Include="DuiDlg\WndShadow.cpp" />
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="json\json_reader.cpp" />
+    <ClCompile Include="json\json_value.cpp" />
+    <ClCompile Include="json\json_writer.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="IPv6Cloud.cpp" />
+    <ClCompile Include="IPv6CloudDlg.cpp" />
+    <ClCompile Include="IPv6CloudSub.cpp" />
+    <ClCompile Include="IPv6CloudThread.cpp" />
+    <ClCompile Include="Xml\tinystr.cpp" />
+    <ClCompile Include="Xml\tinyxml.cpp" />
+    <ClCompile Include="Xml\tinyxmlerror.cpp" />
+    <ClCompile Include="Xml\tinyxmlparser.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IPv6Cloud.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="IPv6Cloud.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Comm">
+      <UniqueIdentifier>{015b2361-e431-4146-ac43-bf858b89e429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiLib">
+      <UniqueIdentifier>{4e17d73d-4d9d-4875-a343-ea616676d969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiLib\Utils">
+      <UniqueIdentifier>{0c988c6c-175b-48db-acda-4cee01b5bfc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiLib\Core">
+      <UniqueIdentifier>{8feac517-79b2-4db5-b3a8-e701849c05ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiLib\Layout">
+      <UniqueIdentifier>{c1ea9aa3-0aa5-45e9-8468-4d1b05a81fdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiLib\Control">
+      <UniqueIdentifier>{4ecf4a97-3c10-48c6-a9e2-abdc9ce76593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DuiDlg">
+      <UniqueIdentifier>{fcfba3c8-e2b2-4ac8-8ddb-3ebd8898dbcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Xml">
+      <UniqueIdentifier>{5e01e567-694e-460f-9f99-ff055e564aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{57b85048-1e78-4047-9f65-207659cd1ca2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\IPv6Cloud.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Exit_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\SysSet_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\About_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Clear_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Web_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="json\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="json\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="res\IPv6Cloud.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IPv6Cloud.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IPv6Cloud_16_16.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\IPv6Cloud_48_48.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PubHead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\AdoQuery.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DS_Ini.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DS_IniFile.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DS_Lock.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DS_Utils.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\EasySize.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\FileUtils.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\Global.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\MemFree.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\UIlib.h">
+      <Filter>DuiLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\downloadmgr.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\FlashEventHandler.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\stb_image.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\UIDelegate.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\Utils.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\WebBrowserEventHandler.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Utils\WinImplBase.h">
+      <Filter>DuiLib\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIBase.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIContainer.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIControl.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIDefine.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIDlgBuilder.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIManager.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIMarkup.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Core\UIRender.h">
+      <Filter>DuiLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Layout\UIChildLayout.h">
+      <Filter>DuiLib\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Layout\UIHorizontalLayout.h">
+      <Filter>DuiLib\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Layout\UITabLayout.h">
+      <Filter>DuiLib\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Layout\UITileLayout.h">
+      <Filter>DuiLib\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Layout\UIVerticalLayout.h">
+      <Filter>DuiLib\Layout</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIActiveX.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIButton.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UICheckBox.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UICombo.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIDateTime.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIEdit.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UILabel.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIList.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIOption.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIProgress.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIRichEdit.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIScrollBar.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UISlider.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIText.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UITreeView.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DuiLib\Control\UIWebBrowser.h">
+      <Filter>DuiLib\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiDlg\DuiLoginDlg.h">
+      <Filter>DuiDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiDlg\DuiMainDlg.h">
+      <Filter>DuiDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DataQueue.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\FastSemaphore.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\md5.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Xml\tinystr.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Xml\tinyxml.h">
+      <Filter>Xml</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\TCPSocket.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\HttpJsonReader.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\DS_Print.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\msword.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiDlg\DuiLib_Dialog.h">
+      <Filter>DuiDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\BASE64_API.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\HttpDownload.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\FileDownload.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\TcpClient.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\excel9.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\MyExcel.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="DuiDlg\WndShadow.h">
+      <Filter>DuiDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Comm\Collector.h">
+      <Filter>Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="IPv6CloudDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IPv6Cloud.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\DS_Ini.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\DS_IniFile.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\FileUtils.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\Global.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiDlg\DuiLoginDlg.cpp">
+      <Filter>DuiDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiDlg\DuiMainDlg.cpp">
+      <Filter>DuiDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\FastSemaphore.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\md5.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml\tinystr.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml\tinyxml.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml\tinyxmlerror.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Xml\tinyxmlparser.cpp">
+      <Filter>Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\TCPSocket.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="json\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\HttpJsonReader.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiDlg\DuiMainSub.cpp">
+      <Filter>DuiDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\msword.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiDlg\DuiLib_Dialog.cpp">
+      <Filter>DuiDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\BASE64_API.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\HttpDownload.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\FileDownload.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\TcpClient.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\excel9.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\MyExcel.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="func.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DuiDlg\WndShadow.cpp">
+      <Filter>DuiDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Comm\Collector.cpp">
+      <Filter>Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="IPv6Cloud.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IPv6CloudDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IPv6CloudSub.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IPv6CloudThread.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IPv6Cloud.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

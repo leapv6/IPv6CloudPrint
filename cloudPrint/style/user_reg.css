@@ -1,0 +1,88 @@
+#content{
+	width: 305px;
+	height: 546px;
+	margin:28px 82px auto 85px;
+}
+
+#top{
+	height: 158px;
+	
+}
+
+#top_content{
+	height: 158px;
+	width: 178px;
+	margin-left: 96px;
+	margin-right: 38px;
+	
+}
+
+#top_content .head{
+	height: 129px;
+	background: url(images/reg_head.png) no-repeat; 
+	margin-left: 20px;
+	margin-bottom: 0px;
+
+}
+
+#top_content .text{
+	margin-top: 0px;
+	font-size: 30px;
+	font-family: 黑体;
+	color: #333333;
+}
+
+#middle{
+	height: 388px;
+	margin-top: 0px;
+	padding-top: 31px;
+
+}
+
+.word{
+	text-align: left;
+	float: left;
+	font-size: 18px;
+	font-family: 微软雅黑;
+	margin-top: 6px;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 80px;
+
+}
+
+#regButton{
+	background: url(images/buttonBg.png) no-repeat;
+	width: 305px;
+	height: 58px;
+	margin-top: 16px;
+	font-size: 24px;
+	font-family: 黑体;
+	color: #ececec;
+	cursor:pointer;
+}
+
+tr{
+	margin-top: 10px; 
+}
+
+td{
+	white-space: nowrap;
+}
+
+table td .rR{  
+	font-size: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 14px;
+	background: #d3d3d3;
+    height: 35px;   
+    width: 200px;   
+    border-width: 0px; //边缘的宽度，如果要分别设置可以这样：border-width: 15px 5px 15px 5px;依次为上、右、下、左  
+    border-style: solid;  
+    border-radius: 5px;    //圆角的大小  
+    border-color: #000 #000 #000 #000;  //边框颜色，依次为上、右、下、左  
+    
+}
+
+.tdinput{ text-align: right; width: 240px; padding-left: 0px;}

@@ -1,0 +1,97 @@
+#main{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 30px auto 0;
+    min-height: 500px;
+    width: 980px
+}
+
+h1.top_title{
+    border-bottom: 1px solid #d3d3d3;
+    color: blue;
+    font-size: 18px;
+    margin: 4px 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 13px;
+}
+
+.content{
+    width: 600px;
+    height: 300px;
+    margin:40px auto 0;
+}
+
+.button{
+    background: #ededed none repeat scroll 0 0;
+    border: 1px solid #b7b7b7;
+    border-radius: 0.5em;
+    color: #606060;
+    cursor: pointer;
+    display: inline-block;
+    font: 16px/100% "Microsoft yahei",Arial,Helvetica,sans-serif;
+    outline: medium none;
+    padding: 0.5em 2em 0.55em;
+    text-align: center;
+    text-decoration: none;
+}
+.button:hover {
+    background: #fff none repeat scroll 0 0;
+    text-decoration: none;
+}
+.button:active {
+    color: #999;
+    position: relative;
+    top: 1px;
+}
+
+.input {
+    border: 1px solid #999;
+    height: 24px;
+    line-height: 24px;
+    padding: 2px;
+    width: 240px;
+}
+
+p{
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #5bb75b;
+    border-color: #e6e6e6 #e6e6e6 #b3b3b3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 4px 20px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn:active{
+    color: red;
+}

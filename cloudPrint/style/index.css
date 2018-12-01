@@ -1,0 +1,86 @@
+#header{
+	width:1024px;
+	margin:0 auto;
+	height: 80px;
+}
+
+#logo{
+	width: 210px;
+	height:67px;
+	background: url(images/logo.png) no-repeat 0 15px;
+	float: left;
+}
+#menu{
+	float: right;
+	margin-top: 35px;
+}
+#menu a{ padding:10px 10px 0 10px ;}
+#menu a.logout{ background:url(images/logout.png) no-repeat 12px 7px; padding-left:30px; display:inline-block}
+
+#content{
+	height:508px;
+	width:100%;
+	background:#9de7d9 url(images/protopbg.png) repeat-x;
+}
+.conbg{ background:url(images/centerbg.png) no-repeat 0 30px; width:1078px; height:508px; margin: 0 auto; position:relative;}
+.print_btn{ background:url(images/printButton.png) no-repeat; 
+	width:340px; height:54px;
+	margin-top: 410px;
+	margin-left: 340px;
+	display:block; position:absolute; 
+	
+}
+#content .remark{ position:absolute;  font-family: 微软雅黑; 
+	font-size:18px; color:#4c4b4b;  
+	margin-top: 470px;
+	margin-left: 435px;
+}
+
+#printButton h1{
+	padding: 10px 30px 10px 30px;
+	font-size: 36px;
+	color: white;
+}
+
+#step{
+	margin: 30px auto 30px auto;
+	width: 1100px;
+	height: 50px;
+}
+
+.box{
+	margin: 2px 10px 10px 15px;
+	float: left;
+	width: 250px;
+}
+.box img{
+	float: left;	
+	width:46px;
+	margin-right: 8px;
+}
+.box h1{
+	color: #68a1eb;
+	text-indent: block;
+	font-size: 24px;
+	margin-bottom: 5px;
+	font-family: 微软雅黑;
+	font-weight:400;
+}
+.box p{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	color:#333;
+	font-weight:200;
+}
+
+#footer{
+	border-top:1px solid #ccc;
+	font-family: 微软雅黑;
+	padding-top:10px;
+	font-weight:0;
+	text-align:center;
+}
+.footer_nav{ color:#555; height:30px; line-height:30px; font-size:12px;}
+.footer_nav a{ padding:0 10px;}
+.footer_nav a.red{ color:#F00;}
+.copyright{ padding-bottom:20px;}

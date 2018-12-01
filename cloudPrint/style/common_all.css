@@ -1,0 +1,148 @@
+﻿@charset "utf-8";
+/*统一基础样式*/
+body, div, dl, dt, dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquoteth,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0;}
+address,caption, cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+capation,th{text-align:left;}
+q:before, q:after{content:' '}
+abbr,acronym{border:0;}
+input,button,select,textarea{outline:none}
+
+/*** 制定项目样式规则 ***/
+body,button,input,select,textarea{font:12px/1.125 "微软雅黑";color: #666;-webkit-text-size-adjust:none;}
+.w960{ width: 960px;margin: 0 auto;}
+.w990{ width: 990px;margin: 0 auto;}
+.shadow{ box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);}
+.cl_ff3300{ color: #ff3300;}
+
+/*页脚 版权*/
+.m-foot{ height: 92px;position: relative;border-top: 1px solid #e1e1e1;margin-top: 55px; background-color: #fff}
+.m-foot .w960{height: 72px;padding-top: 20px;position: relative;}
+.m-foot .logo{background: url("http://www.xunkoo.com/Images/foot_bg.png") -22px -132px  no-repeat;display: block;width: 230px;height: 45px;position: absolute;right: 0;top: 15px;}
+.m-foot .logo:hover{ background-position: -22px -3px;}
+
+/*** 登录 ***/
+.xk2013_loginbar1{float: left;width: 550px;border-right: 1px solid #dadada;padding-bottom: 45px;}
+.xk2013_loginbar1_1{padding-bottom: 20px;margin-top: -5px;font-size: 22px;color: #454545;}
+.xk2013_loginbar1_4{padding-bottom: 8px;font-size: 14px;}
+.xk2013_loginbar1_4_1{float: left;color: #ccc;padding-left: 12px;font-size: 14px;line-height: 32px;}
+.xk2013_loginbar1_5{color: #454545;font-size: 14px;padding: 10px 0;}
+.xk2013_loginbar2{float: left;padding-left: 40px;}
+.xk2013_loginbar2_1{padding-bottom: 5px;font-size: 22px;color: #454545;}
+.xk2013_loginbar2_2{padding-top: 16px;}
+
+/*** dialog ***/
+
+.xk2013t_dl{ width:635px;}
+.xk2013t_dl_top{ height:36px; background:#f8f8f8; padding:0px 14px; border-bottom:1px solid #d6d6d6;}
+.xk2013t_dl_top dd{ float:left; line-height:36px; font-size:16px; color:#333;}
+.xk2013t_dl_top dt{ float:right; padding-top:12px;}
+
+/*弹出登录*/
+.xk2013t_dl_c{ padding:23px; background:#fff;}
+.xk2013t_dl_left{ float:left; width:379px; border-right:1px solid #e1e1e1;}
+.xk2013t_dl_left1{ height:34px; line-height:34px; padding-right:30px;}
+.xk2013t_dl_left1 dd{ float:left;}
+.xk2013t_dl_left1 dt{ float:right;}
+.xk2013t_dl_left2{ padding-bottom:19px;}
+.xk2013t_dl_right{ float:left; padding-left:20px;}
+
+.xk2013_loginbar1_2{ background:url(../Images/xk2013_loginbar1_3.gif) no-repeat; height:40px; padding-left:8px; padding-bottom:15px; float:left;}
+.xk2013_loginbar1_3{ background:url(../Images/xk2013_loginbar1_3.gif) no-repeat right; height:40px; padding-right:10px;}
+.xk2013_loginbar1_3 input{margin-top:1px; border:0px; height:38px;*height: 36px; line-height:38px; padding-left:30px; font-size:18px;}
+.xk2013_loginbar1_3 .input1{ background:url(../Images/xk2013_loginbar1_2.gif) no-repeat;}
+.xk2013_loginbar1_3 .input2{ background:url(../Images/xk2013_loginbar1_2.gif) no-repeat 0px -36px; }
+.xk2013_loginbar1_3 .input3{ background:url(../Images/xk2013_loginbar1_2.gif) no-repeat 0px -72px;}
+.xk2013_loginbar1_3 .input4{ background:url(../Images/xk2013_loginbar1_2.gif) no-repeat 0px -108px; }
+
+/**/
+.xk2013_xltx li{ float:left; border:1px solid #e9e9e9; height:32px; line-height:32px; width:113px;}
+.xk2013_xltx li a.li1{ background:url(../Images/xltx.gif) no-repeat 10px 0px; padding-left:50px; display:block; width:63px; font-size:12px; color:#666;}
+.xk2013_xltx li a.li1:hover{ background:url(../Images/xltx.gif) no-repeat 10px -32px;}
+.xk2013_xltx li a.li2{ background:url(../Images/xltx.gif) no-repeat 10px -64px; padding-left:50px; display:block; width:63px; font-size:12px; color:#666;}
+.xk2013_xltx li a.li2:hover{ background:url(../Images/xltx.gif) no-repeat 10px -96px;}
+.xk2013_xltx li a.li3{ background:url(../Images/renren.png) no-repeat 19px 8px; padding-left:50px; display:block; width:63px; font-size:12px; color:#666;}
+.xk2013_xltx li a.li3:hover{ background-position: 19px -18px;} 
+
+/************/
+.boxy-content{ padding: 20px;*margin: 20px;*padding: 0;}
+.validation-summary-errors {font-size: 12px; color:#666;background-image: url(/Images/error.gif);background-repeat: no-repeat;background-position: left center;padding-top: 10px;padding-right: 10px;padding-bottom: 10px;padding-left: 50px;}
+.boxy-wrapper.fixed{ position: fixed;}
+
+/***********************input***************************/
+.xk2013_input_l{ background:url(../Images/xk2013_input.gif) no-repeat; height:32px; padding-left:10px;float: left;}
+.xk2013_input_r{ background:url(../Images/xk2013_input.gif) no-repeat right; height:32px; padding-right:10px;*float: left;}
+.xk2013_input_r input{ border:0px; height:28px; line-height:28px; *height:26px; *line-height:26px; margin:2px 0px; font-family:"微软雅黑"; font-size:14px;color: #333;}
+.con_right{ background:url(/Images/2013img/con_right.gif) no-repeat; height:32px;}
+.con_right1{ padding:1px 10px; float:left;_overflow: hidden;margin-top:1px;}
+.con_right1 input{ border:0px; line-height:28px; height:28px; *line-height:26px; *height:26px; font-family:"微软雅黑";}
+.con_right2{ float:left; background:url(/Images/2013img/con_right1.gif) no-repeat; width:37px; height:32px;}
+.con_right2 a{ display:block; width:36px; height:32px;}
+.con_right3{ float: left;width: 52px;border-right: 1px solid #d1d1d1;height: 28px;line-height: 28px;cursor: pointer;padding-top: 3px;}
+.con_right3 img{ display:inline-block; *display:inline; *zoom:1; margin-bottom:3px; margin-left:4px;}
+.con_right4{display: none; position: absolute;margin-top: 0px;margin-left: 0px;border: 1px solid #d1d1d1;border-top: 0px;background: #fff;text-align: left;z-index: 5;}
+.con_right4 a{ display: block;padding-left: 9px;line-height: 24px;height: 24px;width: 42px;}
+.con_right4 a:hover{ background: #f2efef;color: #454545;}
+
+/***********************按钮***************************/
+.xk2013_botton_1 .button{border:0; padding:0; margin:0px; background-color:none; cursor:pointer;}
+.xk2013_botton_1 .button:link,
+.xk2013_botton_1 .button:visited,
+.xk2013_botton_1 .button:hover{text-decoration:none; font-size:14px;}
+.xk2013_botton_1 .button .xk-ui-button-default,
+.xk2013_botton_1 .button .xk-ui-button-default span{
+	background:url(images/xk2013_botton.gif) no-repeat;line-height:32px; height:32px;
+	cursor:pointer; padding:0; border:0; margin:0;display:inline-block; *display:inline; zoom:1;white-space:nowrap;
+}
+
+.xk2013_botton_1 .button .xk-ui-button-default{background-position:left -96px; padding-left:5px;}
+.xk2013_botton_1 .button .xk-ui-button-default span{background-position:right -96px; padding-left:19px; padding-right:24px; color:#fff;}
+
+.xk2013_botton_1 .button .xk-ui-button-hover{background-position:left -128px; cursor:pointer;}
+.xk2013_botton_1 .button .xk-ui-button-hover span{background-position:right -128px; color:#fff; cursor:pointer;}
+
+.xk2013_botton_1 .button .xk-ui-button-active{background-position:left -160px; cursor:pointer;}
+.xk2013_botton_1 .button .xk-ui-button-active span{background-position:right -160px; color:#fff; cursor:pointer;}
+
+.xk2013_botton_1 .button .xk-ui-button-disabled{background-position:left -192px; cursor:default;}
+.xk2013_botton_1 .button .xk-ui-button-disabled span{background-position:right -192px; color:#aca899; cursor:default;}
+
+.xk2013_botton_1.z-dis .button .xk-ui-button-default,
+.xk2013_botton_1.z-dis .button .xk-ui-button-default span{ background: #eee;border-radius: 5px;color: #999;}
+
+.xk2013_botton_7 .button{border:0; padding:0; margin:0px; background-color:none; cursor:pointer; font-weight:normal}
+.xk2013_botton_7 .button:link,
+.xk2013_botton_7 .button:visited,
+.xk2013_botton_7 .button:hover{text-decoration:none; font-size:14px;}
+.xk2013_botton_7 .button .xk-ui-button-default,.xk2013_botton_7 .button .xk-ui-button-default span{background:url(../Images/xk2013_botton.gif) no-repeat;line-height:30px; height:32px;cursor:pointer; padding:0; border:0; margin:0;display:inline-block; *display:inline; zoom:1;white-space:nowrap;}
+
+.xk2013_botton_7 .button .xk-ui-button-default{background-position:left -764px; padding-left:14px;}
+.xk2013_botton_7 .button .xk-ui-button-default span{background-position:right -764px; padding-left:10px; padding-right:24px; color:#454545;}
+
+.xk2013_botton_7 .button .xk-ui-button-hover{background-position:left -796px; cursor:pointer;}
+.xk2013_botton_7 .button .xk-ui-button-hover span{background-position:right -796px; color:#67a029; cursor:pointer;}
+
+.xk2013_botton_7 .button .xk-ui-button-active{background-position:left -828px; cursor:pointer;}
+.xk2013_botton_7 .button .xk-ui-button-active span{background-position:right -828px; color:#67a029; cursor:pointer;}
+
+.xk2013_botton_7 .button .xk-ui-button-disabled{background-position:left -860px; cursor:default;}
+.xk2013_botton_7 .button .xk-ui-button-disabled span{background-position:right -860px; color:#aca899; cursor:default;}
+
+/***********************按钮***************************/
+/*弹出框注册*/
+.xk2013_reg2{width:610px; padding: 30px 20px; background: #fff; color: #666; margin: 0 auto; }
+.xk2013_reg2 dl{ padding-bottom:10px; line-height:32px;}
+.xk2013_reg2 dd{ float:left; font-size:14px; text-align:right; padding-right:10px; width:70px; height:32px; line-height:32px;}
+.xk2013_reg2 dt{ float:left; font-size:14px; line-height:32px;}
+.xk2013_reg2 .reg_left{width:600px;float:left;border-right:1px solid #e2e2e2;}
+.xk2013_reg2 .reg_right{float:left;width:115px;padding-top:10px;color:#666666;font-size:12px;font-weight:bold;}
+.xk2013_reg2 .reg_right span{margin-bottom:20px;display:block;}
+.xk2013_reg2 .reg_right li{width:58px;height:30px;border:1px solid #e9e9e9;background:#FAFAFA;margin-bottom:10px;font-size:12px;font-weight:normal;line-height:30px;background:url("../Images/xltx.gif") no-repeat;padding-left:40px;cursor:pointer;}
+.xk2013_reg2 .reg_right  li.ico1{background-position:0 -66px;}
+.xk2013_reg2 .reg_right  li.ico2{background-position:0 -3px;}
+.xk2013_reg2 .reg_right  li.ico1:hover{background-position:0 -98px;}
+.xk2013_reg2 .reg_right  li.ico2:hover{background-position:0 -35px;}
+.xk2013_reg2 .reg_right  li.ico3{ background:url(../Images/renren.png) no-repeat 9px 8px;}
+.xk2013_reg2 .reg_right  li.ico3:hover{ background-position: 9px -18px;} 
